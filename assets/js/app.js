@@ -34,4 +34,18 @@ createApp({
       },
     };
   },
+  methods: {
+    prev() {
+      this.activeImage--;
+      if (this.activeImage < 0) {
+        this.activeImage = this.marvel.images.length - 1;
+      }
+    },
+    next() {
+      this.activeImage++;
+      if (this.activeImage === this.marvel.images.length) {
+        this.activeImage = 0;
+      }
+    },
+  },
 }).mount("#app");
