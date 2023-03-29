@@ -20,7 +20,6 @@ createApp({
   data() {
     return {
       activeImage: 0,
-      // currentIndex: 0,
       images: [
         {
           title: "Marverl's Spiderman Miles Morale",
@@ -72,20 +71,5 @@ createApp({
       this.activeImage = index;
       console.log(index);
     },
-    // nextImage() {
-    //   if (this.currentIndex === this.images.length - 1) {
-    //     this.currentIndex = 0;
-    //   } else {
-    //     this.currentIndex++;
-    //   }
-    // },
   },
-  // mounted() {
-  //   setInterval(() => {
-  //     this.nextImage();
-  //   }, 3000);
-  // },
-  // mounted() {
-  //   console.log(this.marvel);
-  // },
 }).mount("#app");
