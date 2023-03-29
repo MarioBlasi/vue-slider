@@ -1,6 +1,7 @@
 /*Descrizione:
 Partendo dal markup della versione svolta in js plain, rifare lo slider ma questa volta 
 usando Vue.
+
 Bonus:
 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
 2- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
@@ -18,7 +19,18 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      message: "Hello Vue!",
+      marvel: {
+        title: "Marverls Spiderman Miles Morale",
+        description:
+          "Experience the rise of Miles Morales as the new hero master incredible,explosive new powers to became his own Spider-Man",
+        image: [
+          "./assets/img/01.webp",
+          "./assets/img/02.webp",
+          "./assets/img/03.webp",
+          "./assets/img/04.webp",
+          "./assets/img/05.webp",
+        ],
+      },
     };
   },
 }).mount("#app");

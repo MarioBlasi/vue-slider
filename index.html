@@ -17,37 +17,51 @@
       crossorigin="anonymous"
     />
     <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font Awesome  6.4.0-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!--Css-->
   </head>
   <body>
     <div id="app">
       <div class="container">
-        <div class="card">
-          <img src="./assets/img/01.webp" alt="" />
+        <div class="row">
+          <div class="col-10">
+            <img src="./assets/img/01.webp" class="slide-img" alt="" />
 
-          <div class="vue">
-            <h5>{{marvel.title}}</h5>
-            <p>{{marvel.description}}</p>
-          </div>
-
-          <div class="arrow">
-            <button class="prev">
-              <i class="fas fa-arrow-circle-left fa-2x"></i>
-            </button>
-            <!-- prev -->
-            <button class="next">
-              <i class="fas fa-arrow-circle-right fa-2x"></i>
-            </button>
-            <!-- prev -->
+            <div class="vue">
+              <h5>{{marvel.title}}</h5>
+              <p>{{marvel.description}}</p>
+            </div>
           </div>
           <!-- buttons -->
-          <div class="thumbs">
-            <img width="" height="" src="./assets/img/01.webp" alt="" />
-            <img src="./assets/img/02.webp" alt="" />
-            <img src="./assets/img/03.webp" alt="" />
-            <img src="./assets/img/04.webp" alt="" />
-            <img src="./assets/img/05.webp" alt="" />
+          <div class="col-2">
+            <div class="thumbnails">
+              <img src="./assets/img/01.webp" alt="" />
+              <img src="./assets/img/02.webp" alt="" />
+              <img src="./assets/img/03.webp" alt="" />
+              <img src="./assets/img/04.webp" alt="" />
+              <img src="./assets/img/05.webp" alt="" />
+            </div>
+
+            <div class="arrow">
+              <button class="prev">
+                <i
+                  class="fa-sharp fa-regular fa-circle-left fa-spin-pulse fa-2x"
+                ></i>
+              </button>
+              <!-- prev -->
+              <button class="next">
+                <i class="fa-regular fa-circle-right fa-spin-pulse fa-2x"></i>
+              </button>
+              <!-- next -->
+            </div>
           </div>
           <!-- thumbs -->
         </div>

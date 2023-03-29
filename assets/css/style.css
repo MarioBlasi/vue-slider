@@ -1,0 +1,26 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+.row > * {
+  margin-top: var(--bs-gutter-y);
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+}
+.arrow {
+}
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+.thumbnails img {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
