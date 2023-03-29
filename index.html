@@ -34,6 +34,7 @@
         <div class="row">
           <div class="col-9">
             <img :src="marvel.images[activeImage]" alt="" />
+            <!-- <img :src="marvel.images[currentIndex]" alt="" /> -->
             <!-- <img src="./assets/img/01.webp" class="slide-img" alt="" /> -->
 
             <div class="vue">
@@ -56,6 +57,17 @@
                 :class="index === activeImage ? 'active' : ''"
                 @click="changeImage(index)"
               />
+              <div class="arrow d-flex">
+                <button id="sx" class="prev" @click="prev">
+                  <i class="fa-solid fa-arrow-left fa-2x"></i>
+                </button>
+                <!-- prev -->
+                <button id="dx" class="next" @click="next">
+                  <i class="fa-solid fa-arrow-right fa-2x"></i>
+                </button>
+                <!-- next -->
+              </div>
+              <!--buttons-  -->
             </div>
 
             <!-- Cicla attraverso ogni immagine dell'array "marvel.images" -->
@@ -63,19 +75,7 @@
             <!-- Aggiunge un evento click che richiama il metodo "changeImage(i)" -->
             <!-- thumbnails -->
 
-            <div class="arrow">
-              <button class="prev" @click="prev">
-                <i
-                  class="fa-sharp fa-regular fa-circle-left fa-spin-pulse fa-2x"
-                ></i>
-              </button>
-              <!-- prev -->
-              <button class="next" @click="next">
-                <i class="fa-regular fa-circle-right fa-spin-pulse fa-2x"></i>
-              </button>
-              <!-- next -->
-            </div>
-            <!--buttons-  -->
+            >
           </div>
           <!-- col-3---------------- -->
         </div>

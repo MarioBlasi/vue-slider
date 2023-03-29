@@ -11,11 +11,11 @@ body {
   padding-right: calc(var(--bs-gutter-x) * 0);
   padding-left: calc(var(--bs-gutter-x) * 0);
 }
-.arrow {
-}
+
 .thumbnails {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .thumbnails img {
   max-width: 86%;
@@ -23,4 +23,21 @@ body {
 
 img {
   max-width: 100%;
+}
+.arrow {
+  position: absolute;
+  flex-direction: column;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  margin: 5rem;
+  /* background-color: transparent; */
 }
