@@ -21,18 +21,38 @@ createApp({
     return {
       activeImage: 0,
       // currentIndex: 0,
-      marvel: {
-        title: "Marverl's Spiderman Miles Morale",
-        description:
-          "Experience the rise of Miles Morales as the new hero master incredible,explosive new powers to became his own Spider-Man",
-        images: [
-          "./assets/img/01.webp",
-          "./assets/img/02.webp",
-          "./assets/img/03.webp",
-          "./assets/img/04.webp",
-          "./assets/img/05.webp",
-        ],
-      },
+      images: [
+        {
+          title: "Marverl's Spiderman Miles Morale",
+          description:
+            "Experience the rise of Miles Morales as the new hero master incredible,explosive new powers to became his own Spider-Man",
+          src: "./assets/img/01.webp",
+        },
+        {
+          title: "Ratchet & Clank: Rift Apart",
+          description:
+            "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.",
+          src: "./assets/img/02.webp",
+        },
+        {
+          title: "Fortnite",
+          description:
+            "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
+          src: "./assets/img/03.webp",
+        },
+        {
+          title: "Stray",
+          description:
+            "Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city",
+          src: "./assets/img/04.webp",
+        },
+        {
+          title: "Marvel's Avengers",
+          description:
+            "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
+          src: "./assets/img/05.webp",
+        },
+      ],
     };
   },
   methods: {

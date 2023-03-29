@@ -34,31 +34,24 @@
       <div class="container">
         <div class="row">
           <div class="col-9">
-            <img :src="marvel.images[activeImage]" alt="" />
-            <!-- <img :src="marvel.images[currentIndex]" alt="" /> -->
-            <!-- <img src="./assets/img/01.webp" class="slide-img" alt="" /> -->
-
-            <div class="vue">
-              <h5>{{marvel.title}}</h5>
-              <p>{{marvel.description}}</p>
+            <img :src="images[activeImage].src" alt="" />
+            
+            <div class="vue .text-secondary ">
+              <h3>{{images[activeImage].title}}</h3>
+              <p>{{images[activeImage].description}}</p>
             </div>
             <!-- vue details -->
           </div>
           <!-- col-9--------------- -->
           <div class="col-3">
-            <!-- <img :src="image" alt="" v-for="image in marvel.images" /> -->
-            <!-- <img src="./assets/img/02.webp" alt="" />
-              <img src="./assets/img/03.webp" alt="" />
-              <img src="./assets/img/04.webp" alt="" />
-              <img src="./assets/img/05.webp" alt="" /> -->
             <div class="thumbnails">
               <img
-                v-for="(image,index) in marvel.images"
-                :src="image"
-                :class="index === activeImage ? 'active' : ''"
-                @click="changeImage(index)"
+              v-for="(image,index) in images"
+              :src="image.src"
+              :class="index === activeImage ? 'active' : ''"
+              @click="changeImage(index)"
               />
-              <div class="arrow d-flex">
+            <div class="arrow d-flex">
                 <button id="sx" class="prev" @click="prev">
                   <i class="fa-solid fa-arrow-left fa-2x"></i>
                 </button>
@@ -67,9 +60,9 @@
                   <i class="fa-solid fa-arrow-right fa-2x"></i>
                 </button>
                 <!-- next -->
-              </div>
-              <!--buttons-  -->
             </div>
+              <!--buttons-  -->
+            
 
             <!-- Cicla attraverso ogni immagine dell'array "marvel.images" -->
             <!-- Aggiunge la classe "active" all'immagine corrente solo se index === activeImage -->
