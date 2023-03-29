@@ -33,21 +33,22 @@
       <div class="container">
         <div class="row">
           <div class="col-9">
-            <img src="./assets/img/01.webp" class="slide-img" alt="" />
+            <img :src="marvel.images[activeImage]" alt="" />
+            <!-- <img src="./assets/img/01.webp" class="slide-img" alt="" /> -->
 
             <div class="vue">
               <h5>{{marvel.title}}</h5>
               <p>{{marvel.description}}</p>
             </div>
+            <!-- vue details -->
           </div>
-          <!-- buttons -->
           <div class="col-3">
             <div class="thumbnails">
-              <img src="./assets/img/01.webp" alt="" />
-              <img src="./assets/img/02.webp" alt="" />
+              <img :src="image" alt="" v-for="image in marvel.images" />
+              <!-- <img src="./assets/img/02.webp" alt="" />
               <img src="./assets/img/03.webp" alt="" />
               <img src="./assets/img/04.webp" alt="" />
-              <img src="./assets/img/05.webp" alt="" />
+              <img src="./assets/img/05.webp" alt="" /> -->
             </div>
 
             <div class="arrow">
@@ -62,8 +63,8 @@
               </button>
               <!-- next -->
             </div>
+            <!--buttons-  -->
           </div>
-          <!-- thumbs -->
         </div>
       </div>
     </div>

@@ -19,11 +19,12 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      activeImage: 0,
       marvel: {
         title: "Marverls Spiderman Miles Morale",
         description:
           "Experience the rise of Miles Morales as the new hero master incredible,explosive new powers to became his own Spider-Man",
-        image: [
+        images: [
           "./assets/img/01.webp",
           "./assets/img/02.webp",
           "./assets/img/03.webp",
