@@ -4,7 +4,7 @@ body {
 
 .container {
   margin: auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 .row > * {
   margin-top: var(--bs-gutter-y);
@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 .thumbnails img {
-  height: 100%;
+  max-width: 86%;
 }
 
 img {
