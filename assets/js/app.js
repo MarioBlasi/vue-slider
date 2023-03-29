@@ -21,7 +21,7 @@ createApp({
     return {
       activeImage: 0,
       marvel: {
-        title: "Marverls Spiderman Miles Morale",
+        title: "Marverl's Spiderman Miles Morale",
         description:
           "Experience the rise of Miles Morales as the new hero master incredible,explosive new powers to became his own Spider-Man",
         images: [
@@ -47,5 +47,13 @@ createApp({
         this.activeImage = 0;
       }
     },
+    changeImage(index) {
+      this.activeImage = index;
+      console.log(index);
+    },
   },
+
+  // mounted() {
+  //   console.log(this.marvel);
+  // },
 }).mount("#app");

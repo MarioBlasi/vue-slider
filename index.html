@@ -42,14 +42,25 @@
             </div>
             <!-- vue details -->
           </div>
+          <!-- col-9--------------- -->
           <div class="col-3">
-            <div class="thumbnails">
-              <img :src="image" alt="" v-for="image in marvel.images" />
-              <!-- <img src="./assets/img/02.webp" alt="" />
+            <!-- <img :src="image" alt="" v-for="image in marvel.images" /> -->
+            <!-- <img src="./assets/img/02.webp" alt="" />
               <img src="./assets/img/03.webp" alt="" />
               <img src="./assets/img/04.webp" alt="" />
               <img src="./assets/img/05.webp" alt="" /> -->
+            <div class="thumbnails">
+              <img
+                v-for="image in marvel.images"
+                :src="image"
+                :class="index === activeImage ? 'active' : ''"
+                @click="changeImage(index)"
+              />
             </div>
+            <!-- Cicla attraverso ogni immagine dell'array "marvel.images" -->
+            <!-- Aggiunge la classe "active" all'immagine corrente solo se index === activeImage -->
+            <!-- Aggiunge un evento click che richiama il metodo "changeImage(i)" -->
+            <!-- thumbnails -->
 
             <div class="arrow">
               <button class="prev" @click="prev">
@@ -65,6 +76,7 @@
             </div>
             <!--buttons-  -->
           </div>
+          <!-- col-3---------------- -->
         </div>
       </div>
     </div>
