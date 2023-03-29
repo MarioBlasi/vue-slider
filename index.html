@@ -51,12 +51,13 @@
               <img src="./assets/img/05.webp" alt="" /> -->
             <div class="thumbnails">
               <img
-                v-for="image in marvel.images"
+                v-for="(image,index) in marvel.images"
                 :src="image"
                 :class="index === activeImage ? 'active' : ''"
                 @click="changeImage(index)"
               />
             </div>
+
             <!-- Cicla attraverso ogni immagine dell'array "marvel.images" -->
             <!-- Aggiunge la classe "active" all'immagine corrente solo se index === activeImage -->
             <!-- Aggiunge un evento click che richiama il metodo "changeImage(i)" -->
